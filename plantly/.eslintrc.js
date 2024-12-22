@@ -1,7 +1,11 @@
 module.exports = {
   extends: [
     'expo',
-    'plugin:prettier/recommended' // Integra Prettier con ESLint
+    'plugin:prettier/recommended', // Integra Prettier con ESLint
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript'
   ],
   plugins: ['prettier', 'react-native'],
   rules: {
