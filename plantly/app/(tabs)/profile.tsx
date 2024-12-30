@@ -1,6 +1,7 @@
-import { View, StyleSheet, Button } from 'react-native';
+import { View, StyleSheet } from 'react-native';
 import { theme } from '@/theme';
 import { useUserActions } from '@/store/hooks';
+import { PlantlyButton } from '@/components/PlantlyButton';
 
 export default function ProfileScreen() {
   const toggleHadOnboarding = useUserActions();
@@ -16,7 +17,7 @@ export default function ProfileScreen() {
 
   return (
     <View style={styles.container}>
-      <Button title="Go back to onboardings" onPress={handlePress} />
+      <PlantlyButton title="Go back to onboardings" onPress={handlePress} />
     </View>
   );
 }

@@ -10,6 +10,7 @@ module.exports = {
   plugins: ['prettier', 'react-native'],
   rules: {
     'react-native/no-unused-styles': 'error',
+    '@typescript-eslint/no-require-imports': 'off',
     'prettier/prettier': [
       'error',
       {
