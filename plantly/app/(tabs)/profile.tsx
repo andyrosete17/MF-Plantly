@@ -1,7 +1,7 @@
 import { View, StyleSheet } from 'react-native';
 import { theme } from '@/theme';
-import { useUserActions } from '@/store/hooks';
 import { PlantlyButton } from '@/components/PlantlyButton';
+import { useUserActions } from '@/store/user/hooks';
 
 export default function ProfileScreen() {
   const toggleHadOnboarding = useUserActions();

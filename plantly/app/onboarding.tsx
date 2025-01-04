@@ -1,11 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { theme } from '@/theme';
-import { useUserActions } from '@/store/hooks';
 import { useRouter } from 'expo-router';
 import { PlantlyButton } from '@/components/PlantlyButton';
 import { LinearGradient } from 'expo-linear-gradient';
 import { StatusBar } from 'expo-status-bar';
 import { PlantlyImage } from '@/components/PlantyImage';
+import { useUserActions } from '@/store/user/hooks';
 
 export default function OnboardingScreen() {
   const router = useRouter();
@@ -39,7 +39,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'space-evenly',
     alignItems: 'center',
-    backgroundColor: theme.colorWhite
+    backgroundColor: theme.colorWhite,
+    paddingHorizontal: 8
   },
   heading: {
     fontSize: 42,
