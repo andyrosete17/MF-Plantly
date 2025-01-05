@@ -1,9 +1,10 @@
 import { Entypo, Feather } from '@expo/vector-icons';
-import { Redirect, Tabs } from 'expo-router';
+import { Redirect, SplashScreen, Tabs } from 'expo-router';
 import { theme } from '@/theme';
 import { useHasFinishedOnboarding } from '@/store/user/hooks';
 
 export default function Layout() {
+  SplashScreen.hideAsync();
   const hasFinishedOnboarding = useHasFinishedOnboarding();
   if (!hasFinishedOnboarding) {
     return <Redirect href="onboarding" />;
